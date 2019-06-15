@@ -40,7 +40,7 @@ Getting Started
 ---
 First you need an API token, which can be requested on the [OpenData Portal of Rhein-Neckar-Verkehr](https://opendata.rnv-online.de/startinfo-api). 
 
-After you've received an API token by email, you can start by creating an instance of [RNVAPIService](https://github.com/Krymonota/RNV-API/blob/master/src/main/io/github/krymonota/rnvapi/RNVAPIService.java) by calling [RNVAPI#createAPIServiceProvider](https://github.com/Krymonota/RNV-API/blob/master/src/main/io/github/krymonota/rnvapi/RNVAPI.java#L40) and passing the API token as a parameter. Then you can collect all desired information by calling the API methods in the [RNVAPIService](https://github.com/Krymonota/RNV-API/blob/master/src/main/io/github/krymonota/rnvapi/RNVAPIService.java) interface. 
+After you've received an API token by email, you can start by creating an instance of [RNVAPIService](https://github.com/Krymonota/RNV-API/blob/master/src/main/java/io/github/krymonota/rnvapi/RNVAPIService.java) by calling [RNVAPI#createAPIServiceProvider](https://github.com/Krymonota/RNV-API/blob/master/src/main/java/io/github/krymonota/rnvapi/RNVAPI.java#L40) and passing the API token as a parameter. Then you can collect all desired information by calling the API methods in the [RNVAPIService](https://github.com/Krymonota/RNV-API/blob/master/src/main/java/io/github/krymonota/rnvapi/RNVAPIService.java) interface. 
 
 For more information on calling these API methods, take a look at the [examples](https://github.com/Krymonota/RNV-API/tree/master/src/examples/java/io/github/krymonota/rnvapi/examples) and [unit tests](https://github.com/Krymonota/RNV-API/tree/master/src/test/java/io/github/krymonota/rnvapi/test).  
 
@@ -62,13 +62,12 @@ Interfaces
 
 Dependencies ([Maven](https://maven.apache.org))
 ---
-Don't worry, I've already taken care of the project dependencies so that you don't have to deal with them on your own! However, I want to draw some attention to the libraries and tools we use for this project:
+Libraries and tools that are used to build this project:
 - [Project Lombok](https://projectlombok.org)
 - [Retrofit](http://square.github.io/retrofit)
 - [Gson](https://github.com/google/gson) / Gson-Converter for Retrofit
 - [JUnit](https://junit.org/junit5/)
 - [Checkstyle](http://checkstyle.sourceforge.net/)
-
 
 ---
 
