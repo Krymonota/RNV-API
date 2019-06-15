@@ -14,6 +14,8 @@
 
 package io.github.krymonota.rnvapi;
 
+import java.util.List;
+
 import io.github.krymonota.rnvapi.canceled.lines.CanceledLineTransfer;
 import io.github.krymonota.rnvapi.info.journey.JourneyInfoTransfer;
 import io.github.krymonota.rnvapi.info.station.StationInfoTransfer;
@@ -23,8 +25,6 @@ import io.github.krymonota.rnvapi.maps.MapEntity;
 import io.github.krymonota.rnvapi.news.NewsEntry;
 import io.github.krymonota.rnvapi.stationmonitor.Journey;
 import io.github.krymonota.rnvapi.stations.StationPackage;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
