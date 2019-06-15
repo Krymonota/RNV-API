@@ -41,7 +41,7 @@ public final class RNVAPI {
         final OkHttpClient httpClient = new OkHttpClient.Builder().addInterceptor(new Interceptor() {
 
             @Override
-            public Response intercept(Interceptor.Chain chain) throws IOException {
+            public Response intercept(final Interceptor.Chain chain) throws IOException {
                 final Request request = chain.request().newBuilder().addHeader("RNV_API_TOKEN", apiToken).build();
 
                 return chain.proceed(request);
