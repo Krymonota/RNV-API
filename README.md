@@ -67,6 +67,8 @@ Don't worry, I've already taken care of the project dependencies so that you don
 - [Retrofit](http://square.github.io/retrofit)
 - [Gson](https://github.com/google/gson) / Gson-Converter for Retrofit
 - [JUnit](https://junit.org/junit5/)
+- [Checkstyle](http://checkstyle.sourceforge.net/)
+
 
 ---
 
