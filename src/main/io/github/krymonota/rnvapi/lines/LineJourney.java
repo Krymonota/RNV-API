@@ -2,19 +2,30 @@ package io.github.krymonota.rnvapi.lines;
 
 import java.util.List;
 
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
-@Data
+/**
+ * Represents a line journey.
+ * @since 1.0.0
+ * @version 1.0.1
+ */
+@SuperBuilder
+@Getter
+@ToString
+@EqualsAndHashCode
 public class LineJourney {
 
-    private final String lineId;
-    private final String ticker;
-    private final int validFromIndex;
-    private final List<String> lineIDs;
-    private final List<String> timeList;
-    private final List<String> stopListIds;
-    private final List<String> predictedTimeList;
-    private final List<String> stationIDs;
-    private final List<String> directions;
+    private String lineId;
+    private String ticker;
+    private int validFromIndex;
+    private List<String> lineIDs;
+    private List<String> timeList;
+    private List<String> stopListIds;
+    private List<String> predictedTimeList;
+    private List<String> stationIDs;
+    private List<String> directions;
 
 }

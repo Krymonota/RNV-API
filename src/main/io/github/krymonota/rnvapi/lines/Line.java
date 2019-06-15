@@ -1,14 +1,25 @@
 package io.github.krymonota.rnvapi.lines;
 
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
-@Data
+/**
+ * Represents a line.
+ * @since 1.0.0
+ * @version 1.0.1
+ */
+@SuperBuilder
+@Getter
+@ToString
+@EqualsAndHashCode
 public class Line {
 
-    private final String lineID;
-    private final String lineType;
-    private final String hexcolor;
-    private final String iconName;
-    private final long elementID;
+    private String lineID;
+    private String lineType;
+    private String hexcolor;
+    private String iconName;
+    private long elementID;
 
 }

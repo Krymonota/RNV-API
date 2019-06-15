@@ -2,22 +2,33 @@ package io.github.krymonota.rnvapi.info.station;
 
 import java.util.List;
 
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
-@Data
+/**
+ * Represents a station info transfer.
+ * @since 1.0.0
+ * @version 1.0.1
+ */
+@SuperBuilder
+@Getter
+@ToString
+@EqualsAndHashCode
 public class StationInfoTransfer {
 
-    private final String title;
-    private final String text;
-    private final String lineId;
-    private final List<String> stationIds;
-    private final List<String> stationNames;
-    private final String url;
-    private final String author;
-    private final long created;
-    private final long validFrom;
-    private final long validTo;
-    private final long displayFrom;
-    private final long displayTo;
+    private String title;
+    private String text;
+    private String lineId;
+    private List<String> stationIds;
+    private List<String> stationNames;
+    private String url;
+    private String author;
+    private long created;
+    private long validFrom;
+    private long validTo;
+    private long displayFrom;
+    private long displayTo;
 
 }

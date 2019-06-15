@@ -1,23 +1,34 @@
 package io.github.krymonota.rnvapi.stationmonitor;
 
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
-@Data
+/**
+ * Represents a departure.
+ * @since 1.0.0
+ * @version 1.0.1
+ */
+@SuperBuilder
+@Getter
+@ToString
+@EqualsAndHashCode
 public class Departure {
 
-    private final String lineLabel;
-    private final String direction;
-    private final String time;
-    private final String differenceTime;
-    private final String tourId;
-    private final String kindOfTour;
-    private final String foreignLine;
-    private final String newsAvailable;
-    private final String positionInTour;
-    private final String lineId;
-    private final String transportation;
-    private final String platform;
-    private final String status;
-    private final String statusNote;
+    private String lineLabel;
+    private String direction;
+    private String time;
+    private String differenceTime;
+    private String tourId;
+    private String kindOfTour;
+    private String foreignLine;
+    private String newsAvailable;
+    private String positionInTour;
+    private String lineId;
+    private String transportation;
+    private String platform;
+    private String status;
+    private String statusNote;
 
 }

@@ -1,23 +1,33 @@
 package io.github.krymonota.rnvapi.stationmonitor;
 
-import io.github.krymonota.rnvapi.info.station.StationInfoTransfer;
-
 import java.util.List;
 
-import lombok.Data;
+import io.github.krymonota.rnvapi.info.station.StationInfoTransfer;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
-@Data
+/**
+ * Represents a journey.
+ * @since 1.0.0
+ * @version 1.0.1
+ */
+@SuperBuilder
+@Getter
+@ToString
+@EqualsAndHashCode
 public class Journey {
 
-    private final String time;
-    private final String shortLabel;
-    private final String projectedTime;
-    private final String label;
-    private final String icon;
-    private final String color;
-    private final String pastRequestText;
-    private final String ticker;
-    private final List<Departure> listOfDepartures;
-    private final List<StationInfoTransfer> stationInfos;
+    private String time;
+    private String shortLabel;
+    private String projectedTime;
+    private String label;
+    private String icon;
+    private String color;
+    private String pastRequestText;
+    private String ticker;
+    private List<Departure> listOfDepartures;
+    private List<StationInfoTransfer> stationInfos;
 
 }

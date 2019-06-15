@@ -17,12 +17,16 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
+/**
+ * Interface containing all callable api routes.
+ * @since 1.0.0
+ * @version 1.0.1
+ */
 public interface RNVAPIService {
 
     @GET("regions/rnv/modules/stations/packages/{id}")
     Call<StationPackage> getStationPackage(
-            @Path("id") int id
-            );
+            @Path("id") int id);
 
     @GET("regions/rnv/modules/lines/all")
     Call<List<Line>> getAllLines();
@@ -37,8 +41,7 @@ public interface RNVAPIService {
             @Query("time") String time,
             @Query("tourType") String tourType,
             @Query("tourID") String tourID,
-            @Query("hafasID") String hafasID
-            );
+            @Query("hafasID") String hafasID);
 
     @GET("regions/rnv/modules/stationmonitor/element")
     Call<Journey> getStationMonitor(
@@ -46,41 +49,35 @@ public interface RNVAPIService {
             @Query("mode") String mode,
             @Query("time") String time,
             @Query("poles") String poles,
-            @Query("needPlatformDetail") String needPlatformDetail
-            );
+            @Query("needPlatformDetail") String needPlatformDetail);
 
     @GET("regions/rnv/modules/canceled/line")
     Call<List<CanceledLineTransfer>> getCanceledLines(
             @Query("line") String line,
-            @Query("departureTime") String departureName
-            );
+            @Query("departureTime") String departureName);
 
     @GET("regions/rnv/modules/info/station")
     Call<List<StationInfoTransfer>> getStationInfo(
             @Query("lines") String lines,
             @Query("hafasID") String hafasID,
-            @Query("departureTime") String departureName
-            );
+            @Query("departureTime") String departureName);
 
     @GET("regions/rnv/modules/info/station")
     Call<List<JourneyInfoTransfer>> getJourneyInfo(
             @Query("hafasID") String hafasID,
             @Query("poles") String poles,
-            @Query("departureTime") String departureName
-            );
+            @Query("departureTime") String departureName);
 
     @GET("regions/rnv/modules/news")
     Call<List<NewsEntry>> getNewsEntries();
 
     @GET("regions/rnv/modules/ticker")
     Call<List<NewsEntry>> getTickerEntries(
-            @Query("lines") String lines
-            );
+            @Query("lines") String lines);
 
     @GET("regions/rnv/modules/maps")
     Call<List<MapEntity>> getMaps(
             @Query("thumbnailSize") int thumbnailSize,
-            @Query("format") String format
-            );
+            @Query("format") String format);
 
 }
