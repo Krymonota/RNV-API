@@ -14,17 +14,17 @@
 
 package io.github.krymonota.rnvapi.stationmonitor;
 
+import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
-import lombok.experimental.SuperBuilder;
 
 /**
  * Represents a departure.
  * @since 1.0.0
  * @version 1.1.0
  */
-@SuperBuilder
+@Builder
 @Getter
 @ToString
 @EqualsAndHashCode
