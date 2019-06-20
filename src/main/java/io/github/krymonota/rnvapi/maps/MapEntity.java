@@ -22,7 +22,7 @@ import lombok.experimental.SuperBuilder;
 /**
  * Represents a map.
  * @since 1.0.0
- * @version 1.0.1
+ * @version 1.1.0
  */
 @SuperBuilder
 @Getter

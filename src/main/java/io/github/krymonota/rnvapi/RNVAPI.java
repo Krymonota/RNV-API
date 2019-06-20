@@ -26,7 +26,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 /**
  * Main class used for creating an api provider instance of {@link RNVAPIService}.
  * @since 1.0.0
- * @version 1.0.1
+ * @version 1.1.0
  */
 public final class RNVAPI {
 

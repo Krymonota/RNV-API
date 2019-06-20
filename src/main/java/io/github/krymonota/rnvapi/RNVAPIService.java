@@ -34,7 +34,7 @@ import retrofit2.http.Query;
 /**
  * Interface containing all callable api routes.
  * @since 1.0.0
- * @version 1.0.1
+ * @version 1.1.0
  */
 public interface RNVAPIService {
 
